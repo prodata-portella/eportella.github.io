@@ -19,7 +19,7 @@ Teoria é como se **aplica**
     - Se **aplica** com adaptação
 
 ### [Values](https://scrumguides.org/scrum-guide.html#scrum-values)
-Valor é o **princípios** se usa ao **aplicar**
+Valor é o **princípio** que se usa ao **aplicar**
 
 - Commitment
     - Se usa o comprometimento ao **aplicar**
