@@ -1,2 +1,2 @@
 Olá Mundo!
-[Minha missão](missao/Readme.md)
+[Minha missão](docs/missao/README.md)
