@@ -43,7 +43,7 @@ Time é o **papel** que faz uma **ação** sob o que se **aplica** usando o **pr
     - O **papel** scrum master compartliha o que se **aplica** usando o **princípio**
 
 ### [Events](https://scrumguides.org/scrum-guide.html#scrum-events)
-Evento é a cerimônia regida para o **papel** que faz uma **ação** sob o que se **aplica** usando o **princípio**. Não há interesse em regir cerimônia, em caso de interesse ele por ser visto [aqui](https://scrumguides.org/scrum-guide.html#scrum-events)
+Evento é a cerimônia regida para o **papel** que faz uma **ação** sob o que se **aplica** usando o **princípio**. Não há interesse me abstrair o regir cerimônia, caso tenha de interesse ele por ser visto [aqui](https://scrumguides.org/scrum-guide.html#scrum-events)
 
 ### [Artifacts](https://scrumguides.org/scrum-guide.html#scrum-artifacts)
 Artefato não lida com o material produzido do que se **aplica** mas sim com o material produzido na borda do que se aplica. Não há interesse em lidar com o material produzido na borda do que se aplica, mas pode ser consultado [aqui](https://scrumguides.org/scrum-guide.html#scrum-artifacts)
