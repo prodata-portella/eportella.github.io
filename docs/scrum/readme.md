@@ -1,6 +1,6 @@
 ## [Scrum](https://scrumguides.org/scrum-guide.html)
 
-Se você está passando por aqui não se preocupe se vai precisar estudar o scrum, não se preocupe se a instituição que você atua implementa o scrum ou se você será cobrado por ele, apenas reflita sobre a abstração feita  que vem a seguir
+Se você está passando por aqui não se preocupe em estudar o scrum, não se preocupe seu implemento o scrum ou se cobro por ele, apenas reflita sobre a abstração feita com carinho a seguir
 
 ### [History](https://scrumguides.org/scrum-guide.html#purpose-of-the-scrum-guide)
 A história do scrum tem dono, então os créditos vai pra quem fez parte dela [aqui](https://scrumguides.org/scrum-guide.html#purpose-of-the-scrum-guide)
