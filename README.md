@@ -1,3 +1,3 @@
 Seja bem vindo!
 
-Eu tenho [missão](docs/missao/readme.md), [visão](docs/visao/readme.md) e [valores](docs/valor/readme.md), sou regido pela minha compressão do [Scrum](docs/scrum/readme.md), 
+Eu tenho [missão](docs/missao/readme.md), [visão](docs/visao/readme.md) e [valores](docs/valor/readme.md), sou regido pela minha compreensão do [Scrum](docs/scrum/readme.md), 
