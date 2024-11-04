@@ -1,6 +1,6 @@
-> [Gpt](https://chatgpt.com/). Defina pra mim por gentileza os 3 pilares do DDD?
+> [Gpt](https://chatgpt.com/). Defina pra mim por gentileza os 3 pilares do DDD removendo qualquer menção a software?
 
-# Os três pilares do Domain-Driven Design (DDD) são:
+# Domain-Driven Design (DDD) e os seus três pilares
 
 - **Modelo de Domínio:** Refere-se à representação do conhecimento e da lógica de negócios de um determinado domínio. O modelo deve ser rico e expressivo, refletindo a linguagem e os conceitos do negócio. Ele é a base para as decisões de design e desenvolvimento.
 
@@ -8,7 +8,7 @@
 
  - **Bounded Context (Contexto Delimitado):** É uma definição clara do escopo onde um modelo de domínio específico é aplicável. Cada contexto delimitado pode ter seu próprio modelo e linguagem, permitindo que diferentes partes do sistema evoluam de forma independente e evitando conflitos entre modelos.
 
-Esses pilares ajudam a estruturar o desenvolvimento de software, focando na colaboração entre os envolvidos e na clareza dos conceitos do domínio.
+Esses pilares ajudam a estruturar o desenvolvimento focando na colaboração entre os envolvidos e na clareza dos conceitos do domínio.
 
 > [Gpt](https://chatgpt.com/). O que há no DDD além dos tres pilares?
 
