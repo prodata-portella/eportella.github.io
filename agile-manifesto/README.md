@@ -1,6 +1,6 @@
 > [Gpt](https://chatgpt.com/) Descreva por gentileza no formato de redação com introdução, desenvolvimento com apenas um paragrafo e conclusão o que é o manifesto ágil com a referencia oficial?
 
-# O Manifesto Ágil e Sua Relevância no Desenvolvimento de Software
+# O Manifesto Ágil e sua relevância
 
 O Manifesto Ágil, criado em 2001 por um grupo de desenvolvedores, representa uma transformação paradigmática na forma como o desenvolvimento de software é conduzido. Em um cenário onde a rigidez de processos muitas vezes prejudicava a inovação e a colaboração, esse manifesto emergiu como uma resposta às necessidades de um mercado em constante mudança. Seus princípios fundamentais promovem uma abordagem mais adaptável e colaborativa, refletindo a evolução das demandas do setor.
 
