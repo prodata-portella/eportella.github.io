@@ -8,6 +8,6 @@ Eu sou Portella Ltda, tenho [missão](docs/missao/readme.md) [visão](docs/visao
 >- Estou me preparando e tenho o compromisso de em breve compartilhar com um pouco mais de detalhes como meus artefatos são organizados.
 >- Também estou me preparando para em breve compartilhar o quando nasci e qual foi a minha trajetória até aqui.
 
-Muito Prazer!\
+Muito prazer!\
 **PORTELA-LTDA**\
 ewerton.portella@outlook.com
