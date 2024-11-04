@@ -9,5 +9,5 @@ Eu sou Portella Ltda, tenho [missão](missao/README.md) [visão](visao/README.md
 >- Também estou me preparando para em breve compartilhar o quando nasci e qual foi a minha trajetória até aqui.
 
 Muito prazer!\
-**PORTELA-LTDA**\
+**PORTELLA-LTDA**\
 ewerton.portella@outlook.com
