@@ -1,5 +1,6 @@
 > [Gpt](https://chatgpt.com/). Defina pra mim por gentileza os 3 pilares do DDD?
-## Os três pilares do Domain-Driven Design (DDD) são:
+
+# Os três pilares do Domain-Driven Design (DDD) são:
 
 - **Modelo de Domínio:** Refere-se à representação do conhecimento e da lógica de negócios de um determinado domínio. O modelo deve ser rico e expressivo, refletindo a linguagem e os conceitos do negócio. Ele é a base para as decisões de design e desenvolvimento.
 

@@ -1,4 +1,4 @@
-# Minha visão abstraída sobre o [Scrum](https://scrumguides.org/scrum-guide.html)
+# Minha visão abstraida sobre o [Scrum](https://scrumguides.org/scrum-guide.html)
 
 Se você está passando por aqui não se preocupe em estudar o scrum, não se preocupe seu implemento o scrum ou se cobro por ele, apenas reflita sobre a abstração feita com carinho a seguir
 
