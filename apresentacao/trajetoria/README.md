@@ -10,8 +10,8 @@ Nasci em 24/06/2016 e fui constituida por "Ewerton da Silva Portella", antes de 
 - Também com 16 anos ouviu pela primeira primeira vez a profissão programador de computadores[^2] por um colega de infância que havia iniciado sua trajetória profissional como programador na [*Microsoft*](https://www.microsoft.com/);
 - Entre os 17 e 26 anos construiu carreira no ramo de culinária oriental passando pelas empresas [*Flying Sushi*](https://flyingsushi.com.br/) e posteriormente [*Gendai*](https://flyingsushi.com.br/)[^3];
 - Voltando aos 25 anos completou um módulo na [Impacta Certificações e Treinamentos](https://www.impacta.com.br/)[^4]
-- Agora novamente aos 26 anos, Se matriculou na graduação Ciências da Computação na [Uninove](https://www.uninove.br/) onde se formou; 
-- Dos 27 até 30 anos atuou como Analista e desenvolvedor de softwares[^5];
+- Agora novamente aos 26 anos, Se matriculou na graduação Ciências da computação na [Uninove](https://www.uninove.br/) onde se formou; 
+- Dos 27 até 30 anos atuou como Analista e desenvolvedor de *softwares*[^5];
 - Por fim à partir dos 30 anos passou a complementar sua atuação coesistindo *softwares* com empreendedorismo.
 
 ## Minha trajetória
