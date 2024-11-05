@@ -1,6 +1,6 @@
 # Nossa trajetória
 
-Nasci em 24/06/2016 e fui constituida por "Ewerton da Silva Portella", Antes de falar sobre mim vou elencar a trajetória dele.
+Nasci em 24/06/2016 e fui constituida por "Ewerton da Silva Portella", antes de falar sobre mim vou elencar a trajetória dele.
 
 ## Trajetória do Ewerton da Silva Portella
 
