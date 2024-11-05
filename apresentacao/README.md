@@ -10,4 +10,4 @@ Muito prazer!\
 **PORTELLA-LTDA**\
 [ewerton.portella@outlook.com](mailto:ewerton.portella@outlook.com)
 
-[^1]: Exceto o [*Feature Toogles*](feature-toggles/README.md) por se tratar de um site com natureza estática.
+[^1]: Exceto o *Feature Toggles* por se tratar de um site com natureza estática.
