@@ -10,4 +10,4 @@ Eu sou Portella Ltda, tenho [missão](missao/README.md) [visão](visao/README.md
 
 Muito prazer!\
 **PORTELLA-LTDA**\
-ewerton.portella@outlook.com
+[ewerton.portella@outlook.com](mailto:ewerton.portella@outlook.com)
