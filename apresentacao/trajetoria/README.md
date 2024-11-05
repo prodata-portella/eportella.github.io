@@ -25,3 +25,6 @@ Nasci em 24/06/2016 e fui constituida por "Ewerton da Silva Portella", antes de 
 [^3]: Nessa fase passou por diversos cursos e treinamentos voltados a empreendedorismo e gestão de pessoas. Também foi meados a essa fase que o interesse por programação começou a surgir quando sentiu necessidade de eliminar procedimentos repetitivos como gerente e posteriomente gerente sócio em duas franquias na rede *Gendai*.
 [^4]: O conteúdo do módulo foi, Introdução a Lógica de Programação. Introdução a Programação Orientada a Objetos. *MsSql Server 2008* Módulo I, *Java Programmer* Módulo I e II.
 [^5]: Nesse periodo passou pela [IS2B](https://is2b.com.br), [Polícia Científica](https://www.policiacientifica.sp.gov.br/) pela **TODO!**, [ILATI](http://www.ilati.org.br/) e [FMU](https://fmu.br).
+
+
+<script>console.warn('hi!')</script>
