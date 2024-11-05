@@ -12,7 +12,8 @@ Nasci em 24/06/2016 e fui constituida por "Ewerton da Silva Portella", antes de 
 - Voltando aos 25 anos completou um módulo na [Impacta Certificações e Treinamentos](https://www.impacta.com.br/)[^4]
 - Agora novamente aos 26 anos, Se matriculou na graduação Ciências da computação na [Uninove](https://www.uninove.br/) onde se formou; 
 - Dos 27 até 30 anos atuou como Analista e desenvolvedor de *softwares*[^5];
-- Por fim à partir dos 30 anos passou a complementar sua atuação coesistindo *softwares* com empreendedorismo.
+- Por fim à partir dos 30 anos passou a complementar sua atuação coesistindo *softwares* com empreendedorismo;
+- Hoje Ewerton da Silva Portella tem <span id="age">**idade**</span> anos.
 
 ## Minha trajetória
 >[!NOTE]
@@ -27,4 +28,16 @@ Nasci em 24/06/2016 e fui constituida por "Ewerton da Silva Portella", antes de 
 [^5]: Nesse periodo passou pela [IS2B](https://is2b.com.br), [Polícia Científica](https://www.policiacientifica.sp.gov.br/) pela **TODO!**, [ILATI](http://www.ilati.org.br/) e [FMU](https://fmu.br).
 
 
-<script>console.warn('hi!')</script>
+<script>
+
+    const ageCalculate = (birthDate) => {
+        const today = new Date();
+        const birth = new Date(birthDate);
+        let age = today.getFullYear() - birth.getFullYear();
+        if (today.getMonth() < birth.getMonth() || (today.getMonth() === birth.getMonth() && today.getDate() < birth.getDate())) age--;
+        return age;
+    };
+    const birthDate = '1985-06-28';
+    document.getElementById('age').textContent = ageCalculate(birthDate);
+
+</script>
