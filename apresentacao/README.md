@@ -13,7 +13,7 @@ Se tiver interesse em ver na prática, acesse o [código fonte](https://github.c
 
 >[!NOTE]
 >
->- Tenho uma semântica bem peculiar para escrever soluções. Tentarei descrever em breve.
+>- Tenho uma semântica bem peculiar para implementar soluções. Tentarei descrever em breve.
 
 Muito prazer!\
 **PORTELLA-LTDA**\
