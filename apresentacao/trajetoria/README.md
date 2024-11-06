@@ -12,7 +12,7 @@ Nasci em 24/06/2016 e fui constituida por **Ewerton da Silva Portella**, antes d
 - Voltando aos 25 anos completou um módulo na [Impacta Certificações e Treinamentos](https://www.impacta.com.br/)[^4]
 - Agora novamente aos 26 anos, Se matriculou na graduação Ciências da computação na [Uninove](https://www.uninove.br/) onde se formou; 
 - Dos 27 até 30 anos atuou como Analista e desenvolvedor de *softwares*[^5];
-- Por fim à partir dos 30 anos passou a complementar sua atuação coesistindo *softwares* com empreendedorismo;
+- Por fim a partir dos 30 anos passou a complementar sua atuação coesistindo *softwares* com empreendedorismo;
 - Hoje Ewerton da Silva Portella tem <span id="age">`idade`</span> anos.
 
 ## Minha trajetória
