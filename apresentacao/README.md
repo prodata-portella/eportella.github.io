@@ -30,6 +30,7 @@ Muito prazer!\
                 p.textContent = ''
                 p.style.display = 'flex'
                 p.style.alignItems = 'center'
+                p.styles.columnGap = '0.4em'
                 const ns = "http://www.w3.org/2000/svg"
 
                 const note = document.createElementNS(ns, "svg")
