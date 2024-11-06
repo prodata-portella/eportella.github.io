@@ -16,4 +16,3 @@
 >Em conclusão, o Manifesto Ágil não apenas redefiniu práticas de desenvolvimento de software, mas também estabeleceu uma nova cultura organizacional que prioriza a colaboração, a adaptabilidade e a satisfação do cliente. Através de seus valores e princípios, ele continua a influenciar profundamente a forma como as equipes trabalham e interagem, destacando a importância de um processo ágil em um mundo que exige respostas rápidas e eficazes.
 >
 >Para mais informações, o Manifesto pode ser consultado em sua versão oficial no site [agilemanifesto.org](https://agilemanifesto.org).
-
