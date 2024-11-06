@@ -1,6 +1,15 @@
 # Seja bem vindo!
 
-Eu sou Portella Ltda conheça minha [trajetória](trajetoria/README.md) aqui, tenho [missão](missao/README.md) [visão](visao/README.md) e [valores](valor/README.md), sou regido pela minha compreensão abstraida do [*Scrum*](scrum/README.md) acreditando que ele tenha coerência com o [Manifesto ágil](agile-manifesto/README.md). Organizo os meus artefatos atualmente principalmente com três "tecnologias". [*Domain Driven Design*](domain-driven-design/README.md), [*Feature Folder*](feature-folder/README.md) mais [*Feature Toggles*](feature-toggles/README.md). Se tiver interesse em conhecer um pouco na prática, acesse o [código fonte](https://github.com/eportella/PORTELLA-LTDA/tree/main/apresentacao) dessa apresentação, ela segue quase tudo[^1] o que foi mencionado e está publico.
+Eu sou a Portella Ltda.
+
+Conheça a minha [trajetória](trajetoria/README.md).\
+Tenho uma [missão](missao/README.md), [visão](visao/README.md) e [valores](valor/README.md) bem definidos, e sou regido pela minha compreensão abstraída do [*Scrum*](scrum/README.md), acreditando que ele está em coerência com o [Manifesto ágil](agile-manifesto/README.md).\
+Organizo meus artefatos principalmente com três “tecnologias”:
+1. [*Domain Driven Design*](domain-driven-design/README.md);
+1. [*Feature Folder*](feature-folder/README.md);
+1. [*Feature Toggles*](feature-toggles/README.md),
+
+Se tiver interesse em ver na prática, acesse o [código fonte](https://github.com/eportella/PORTELLA-LTDA/tree/main/apresentacao) desta apresentação. Ele segue quase tudo[^1] o que foi mencionado acima e está disponível publicamente.
 
 >[!NOTE]
 >
