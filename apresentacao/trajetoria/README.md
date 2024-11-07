@@ -18,11 +18,11 @@ Nasci em 24/06/2016 e fui constituida por **Ewerton da Silva Portella**, antes d
 ## Minha trajetória
 
 - Meu 1º ano foi na [Envision Tecnologia](https://www.envisiontecnologia.com.br/) onde conheci o setor de turismo, como fui contratado com um scopo específico esse desafio durou 8 meses;
-- Ainda no 1º ano e com relacionamentos atualente, fui indicado pela própria [Envision Tecnologia](https://www.envisiontecnologia.com.br/) para atuar na [Trade Tours](https://tradetours.com.br/) e [Trade Tech](https://tradetech.com.br/). Lá além de sustentar os sistemas já existentes contribui ativamente e principalmente até os meus 4º ano no desenvolvimento dos produtos;
+- Ainda no 1º ano fui indicado pela própria [Envision Tecnologia](https://www.envisiontecnologia.com.br/) para atuar na [Trade Tours](https://tradetours.com.br/) e [Trade Tech](https://tradetech.com.br/). Lá além de sustentar os sistemas já existentes contribui ativamente e principalmente até os meus 4º ano no desenvolvimento dos produtos;
     - [Reservecar](https://reservecar.com.br/)
     - [Seus Ingressos](https://seusingressos.com.br/)
     - [Horas Mágicas](https://horasmagicas.com/)
-- Meu 4º ano em parceria com a [Logical Minds](https://www.logicalminds.com.br/) contribui para a **Edenred Soluções pré pagas** hoje conhecida como [Edenred Pay](https://www.edenredpay.com.br/) do grupo [Edenred](https://www.edenred.com.br/). Na ocasião meus principais desafios foram participar do desenvolvimento da Conta Digital Pessoa Jurídica e liderei o time de faturamento;
+- No meu 4º ano em parceria com a [Logical Minds](https://www.logicalminds.com.br/) contribui para a **Edenred Soluções pré pagas** hoje conhecida como [Edenred Pay](https://www.edenredpay.com.br/) do grupo [Edenred](https://www.edenred.com.br/). Na ocasião meus principais desafios foram participar do desenvolvimento da Conta Digital Pessoa Jurídica e liderei o time de faturamento;
 
 >[!TIP]
 >
