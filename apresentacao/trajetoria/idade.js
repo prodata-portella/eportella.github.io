@@ -15,6 +15,6 @@
     document.getElementById('portella-age').textContent = portella
     document.getElementById['age-total'].textContent = ewerton;
     document.getElementById['age-contato'].textContent = contato;
-    document.getElementById('ago-experiencia').textContent = experiencia;
+    document.getElementById('age-experiencia').textContent = experiencia;
 
 })();
