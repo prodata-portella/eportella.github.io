@@ -1,6 +1,7 @@
 (function blockquote() {
     const format = () => {
         document.querySelectorAll('blockquote p').forEach(p => {
+            
             if (p.textContent === '[!NOTE]') {
                 (function note() {
                     p.textContent = ''
@@ -23,6 +24,7 @@
                     p.appendChild(svg)
                     p.append('Note')
                 })()
+                return;
             }
             if (p.textContent === '[!TIP]') {
                 (function tip() {
@@ -46,6 +48,7 @@
                     p.appendChild(svg)
                     p.append('Tip')
                 })()
+                return
             }
             if (p.textContent === '[!IMPORTANT]') {
                 (function important() {
@@ -69,6 +72,7 @@
                     p.appendChild(svg)
                     p.append('Important')
                 })()
+                return
             }
             if (p.textContent === '[!WARNING]') {
                 (function warning() {
@@ -92,6 +96,7 @@
                     p.appendChild(svg)
                     p.append('Warning')
                 })()
+                return
             }
             if (p.textContent === '[!CAUTION]') {
                 (function caution() {
@@ -115,6 +120,7 @@
                     p.appendChild(svg)
                     p.append('Warning')
                 })()
+                return
             }
         })
     };
