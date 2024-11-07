@@ -13,7 +13,7 @@ Nasci em 24/06/2016 e fui constituida por **Ewerton da Silva Portella**, mas ant
 - Agora novamente aos 26 anos, Se matriculou na graduação Ciências da computação na [Uninove](https://www.uninove.br/) onde se formou; 
 - Dos 27 até 30 anos atuou como Analista e desenvolvedor de *softwares*[^5];
 - Por fim a partir dos 30 anos passou a complementar sua atuação coesistindo *softwares* com empreendedorismo;
-- Hoje Ewerton da Silva Portella tem <span id="ewerton-age">`idade`</span> anos.
+- Hoje Ewerton da Silva Portella tem <span id="ewerton-age">`idade atual`</span> anos.
 
 ## Minha trajetória
 
@@ -27,11 +27,13 @@ Nasci em 24/06/2016 e fui constituida por **Ewerton da Silva Portella**, mas ant
     - Contribuir e liderar com o time Faturamento no desenvolvimento da **sustentação** e ***Upgrade*** **da plataforma de integração com o backoffice global**.
 - Próximo ao 6º ano iniciei meu relacionamento com a [Crefisa](https://www.crefisa.com.br/), onde em parceria com a [200 DEV](https://200dev.com/) sigo com um único porém grande desafio.
     - Contribuir e liderar com o desenvolvimento da migração de um conjunto de módulos "*middle office*" com âmbito nacional voltado para gestão administrativa.
-- Hoje eu estou no meu <span id="portella-age">`tempo`</span>º ano
+- Hoje eu estou no meu <span id="portella-age">`tempo atual`</span>º ano.
 
 >[!TIP]
 >
 >- Minha trajetória está em constrante contrução. Sempre que tver algo novo para contar, tão breve deixaei disponível.
+
+São no total <span id="age-total">`idade total`</span> anos sendo <span id="age-contato">`idade contato`</span> desde o primeiro contato e <span id="age-experiencia">`tempo experiência`</span> acumulados.
 
 
 [^1]: Primeiro contato com "programação" e não sabia muito o que fazer com aquilo.\
