@@ -24,10 +24,10 @@ Nasci em 24/06/2016 e fui constituida por **Ewerton da Silva Portella**, mas ant
     - [Horas Mágicas](https://horasmagicas.com/)
 - No meu 4º ano em parceria com a [Logical Minds](https://www.logicalminds.com.br/) contribui para a **Edenred Soluções pré pagas** hoje conhecida como [Edenred Pay](https://www.edenredpay.com.br/) do grupo [Edenred](https://www.edenred.com.br/). Na ocasião meus principais desafios foram;
     - Contribuir com o desenvolvimento da **Conta Digital Pessoa Jurídica**;
-    - Contribuir e liderar com o time Faturamento no desenvolvimento da **sustentação** e ***Upgrade*** **da plataforma de integração com o backoffice global**.
+    - Contribuir com e liderar o time Faturamento no desenvolvimento da **sustentação** e ***Upgrade*** **da plataforma de integração com o backoffice global**.
 - Próximo ao 6º ano iniciei meu relacionamento com a [Crefisa](https://www.crefisa.com.br/), onde em parceria com a [200 DEV](https://200dev.com/) sigo com um único porém grande desafio.
-    - Contribuir e liderar com o desenvolvimento da migração de um conjunto de módulos "*middle office*" com âmbito nacional voltado para gestão administrativa.
-- Hoje eu estou no meu <span id="portella-age">`tempo atual`</span>º ano.
+    - Contribuir com e liderar o desenvolvimento da migração de um conjunto de módulos "*middle office*" com âmbito nacional voltado para gestão administrativa.
+- Hoje estou no <span id="portella-age">`tempo atual`</span>º ano da minha tragetória.
 
 >[!TIP]
 >
