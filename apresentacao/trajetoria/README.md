@@ -5,7 +5,7 @@ Nasci em 24/06/2016 e fui constituida por **Ewerton da Silva Portella**, mas ant
 ## Trajetória do Ewerton da Silva Portella
 
 - Nascido em 28/06/1985 teve o seu primeiro contato com informática aproximandamente aos 10 anos com um computador pessoal da familia;
-- Com 14 anos fez o seu primeiro curso de informática na [Data Byte](https://databyte.com.br/) de Windows Ms Office[^1];
+- Com 14 anos fez o seu primeiro curso de informática na [Data Byte](https://databyte.com.br/) de Windows e Ms Office[^1];
 - Com 16 anos na [Microcamp Tecnologia](https://microcamp.com.br/) concluiu o curso para montagem, manutenção e configuração de hardware.
 - Também com 16 anos ouviu pela primeira primeira vez a profissão programador de computadores[^2] por um colega de infância que havia iniciado sua trajetória profissional como programador na [*Microsoft*](https://www.microsoft.com/);
 - Entre os 17 e 26 anos construiu carreira no ramo de culinária oriental passando pelas empresas [*Flying Sushi*](https://flyingsushi.com.br/) e posteriormente [*Gendai*](https://flyingsushi.com.br/)[^3];
