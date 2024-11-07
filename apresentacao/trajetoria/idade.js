@@ -6,11 +6,15 @@
         if (today.getMonth() < birth.getMonth() || (today.getMonth() === birth.getMonth() && today.getDate() < birth.getDate())) age--
         return age
     };
-    (function ewerton() {
-        document.getElementById('ewerton-age').textContent = calculate('1985-06-28')
-    })();
+    const ewerton = calculate('1985-06-28')
+    const portella = calculate('2016-06-24')
+    const contato = calculate('1995-06-28')
+    const experiencia = calculate('2012-01-01')
 
-    (function portella() {
-        document.getElementById('portella-age').textContent = calculate('2016-06-24')
-    })();
+    document.getElementById('ewerton-age').textContent = ewerton
+    document.getElementById('portella-age').textContent = portella
+    document.getElementById['age-total'].textContent = ewerton;
+    document.getElementById['age-contato'].textContent = contato;
+    document.getElementById('ago-experiencia').textContent = experiencia;
+
 })();

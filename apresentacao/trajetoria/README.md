@@ -33,7 +33,7 @@ Nasci em 24/06/2016 e fui constituida por **Ewerton da Silva Portella**, mas ant
 >
 >- Minha trajetória está em constrante contrução. Sempre que tver algo novo para contar, tão breve deixaei disponível.
 
-São no total <span id="age-total">`idade total`</span> anos sendo <span id="age-contato">`idade contato`</span> desde o primeiro contato e <span id="age-experiencia">`tempo experiência`</span> acumulados.
+Uma tragetória de <span id="age-total">`idade total`</span> anos sendo <span id="age-contato">`idade contato`</span> desde o primeiro contato e <span id="age-experiencia">`idade experiência`</span> anos de experiência acumulada.
 
 
 [^1]: Primeiro contato com "programação" e não sabia muito o que fazer com aquilo.\
