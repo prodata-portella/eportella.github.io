@@ -27,6 +27,7 @@ Nasci em 24/06/2016 e fui constituida por **Ewerton da Silva Portella**, antes d
     - Contribuir e liderar com o time Faturamento no desenvolvimento da **sustentação** e ***Upgrade*** **da plataforma de integração com o backoffice global**.
 - Próximo ao 6º ano iniciei meu relacionamento com a [Crefisa](https://www.crefisa.com.br/) em parceria com a [200 DEV](https://200dev.com/) sigo com um único porém grande desafio.
     - Contribuir e liderar com o desenvolvimento da migração de um conjunto de módulos "*middle office*" com âmbito nacional voltado para gestão administrativa.
+    
 >[!TIP]
 >
 >- Minha trajetória não está completa. Preparando mais conteúdo que estará disponível em breve.
