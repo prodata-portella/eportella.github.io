@@ -15,7 +15,7 @@
     params.ewerton.textContent = ewerton
     params.portella.textContent = portella
     params.total.textContent = ewerton;
-    params.textContent = contato;
+    params.cntato.textContent = contato;
     params.experiencia.textContent = profissionalExperiencia;
     params.tiExperiencia.textContent = tiExperiencia;
 
