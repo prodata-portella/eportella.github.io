@@ -30,7 +30,7 @@ Nasci em 24/06/2016 e fui constituida por **Ewerton da Silva Portella**, antes d
     
 >[!TIP]
 >
->- Minha trajetória não está completa. Preparando mais conteúdo que estará disponível em breve.
+>- Minha trajetória está em constrante contrução. Sempre que tver algo novo para contar, tão breve deixaei disponível.
 
 
 [^1]: Primeiro contato com "programação" e não sabia muito o que fazer com aquilo.\
