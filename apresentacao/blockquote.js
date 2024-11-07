@@ -9,7 +9,7 @@
                     p.style.alignItems = 'center'
                     p.style.columnGap = '0.4em'
                     p.style.fontWeight = '500';
-                    p.styles.font = '#1f6feb';
+                    p.style.font = '#1f6feb';
                     const namespace = "http://www.w3.org/2000/svg"
 
                     const svg = document.createElementNS(namespace, "svg")
@@ -35,7 +35,7 @@
                     p.style.alignItems = 'center'
                     p.style.columnGap = '0.4em'
                     p.style.fontWeight = '500';
-                    p.styles.font = '#3fb950';
+                    p.style.font = '#3fb950';
                     const namespace = "http://www.w3.org/2000/svg"
 
                     const svg = document.createElementNS(namespace, "svg")
@@ -61,7 +61,7 @@
                     p.style.alignItems = 'center'
                     p.style.columnGap = '0.4em'
                     p.style.fontWeight = '500';
-                    p.styles.font = '#ab7df8';
+                    p.style.font = '#ab7df8';
                     const namespace = "http://www.w3.org/2000/svg"
 
                     const svg = document.createElementNS(namespace, "svg")
@@ -87,7 +87,7 @@
                     p.style.alignItems = 'center'
                     p.style.columnGap = '0.4em'
                     p.style.fontWeight = '500';
-                    p.styles.font = '#d29922';
+                    p.style.font = '#d29922';
                     const namespace = "http://www.w3.org/2000/svg"
 
                     const svg = document.createElementNS(namespace, "svg")
@@ -113,7 +113,7 @@
                     p.style.alignItems = 'center'
                     p.style.columnGap = '0.4em'
                     p.style.fontWeight = '500';
-                    p.styles.font = '#f85149';
+                    p.style.font = '#f85149';
                     const namespace = "http://www.w3.org/2000/svg"
 
                     const svg = document.createElementNS(namespace, "svg")
