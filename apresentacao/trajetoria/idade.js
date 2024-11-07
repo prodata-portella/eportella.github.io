@@ -13,8 +13,8 @@
 
     document.getElementById('ewerton-age').textContent = ewerton
     document.getElementById('portella-age').textContent = portella
-    document.getElementById['age-total'].textContent = ewerton;
-    document.getElementById['age-contato'].textContent = contato;
+    document.getElementById('age-total').textContent = ewerton;
+    document.getElementById('age-contato').textContent = contato;
     document.getElementById('age-experiencia').textContent = experiencia;
 
 })();
