@@ -1,4 +1,4 @@
-(function blockquote() {
++(function blockquote() {
     const format = () => {
         document.querySelectorAll('blockquote').forEach(blockquote => {
             const p = blockquote.querySelector('p');
@@ -8,7 +8,7 @@
             if (p.textContent === '[!NOTE]') {
                 const color = '#1f6feb'
                 p.style.borderColor = color
-                (function note() {
+                +(function note() {
                     p.textContent = ''
                     p.style.display = 'flex'
                     p.style.alignItems = 'center'
@@ -37,7 +37,7 @@
             if (p.textContent === '[!TIP]') {
                 const color = '#3fb950'
                 p.style.borderColor = color
-                (function tip() {
+                +(function tip() {
                     p.textContent = ''
                     p.style.display = 'flex'
                     p.style.alignItems = 'center'
@@ -65,7 +65,7 @@
             }
             if (p.textContent === '[!IMPORTANT]') {
                 const color = '#ab7df8'
-                (function important() {
+                +(function important() {
                     p.style.borderColor = color
                     p.textContent = ''
                     p.style.display = 'flex'
@@ -95,7 +95,7 @@
             if (p.textContent === '[!WARNING]') {
                 const color = '#d29922'
                 p.style.borderColor = color
-                (function warning() {
+                +(function warning() {
                     p.textContent = ''
                     p.style.display = 'flex'
                     p.style.alignItems = 'center'
@@ -124,7 +124,7 @@
             if (p.textContent === '[!CAUTION]') {
                 const color = '#f85149'
                 p.style.borderColor = color
-                (function caution() {
+                +(function caution() {
                     p.textContent = ''
                     p.style.display = 'flex'
                     p.style.alignItems = 'center'
