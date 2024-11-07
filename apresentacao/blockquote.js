@@ -12,7 +12,7 @@
                     name: 'Note',
                 }
                 blockquote.style.borderColor = highlight.color
-                    + (function note() {
+                    ; (function note() {
                         p.textContent = ''
                         p.style.display = 'flex'
                         p.style.alignItems = 'center'
