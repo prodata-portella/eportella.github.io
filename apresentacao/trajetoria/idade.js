@@ -1,4 +1,4 @@
-(function age() {
+(function age(params) {
     const calculate = (birthDate) => {
         const today = new Date()
         const birth = new Date(birthDate)
@@ -12,11 +12,18 @@
     const profissionalExperiencia = calculate('2001-01-01')
     const tiExperiencia = calculate('2012-01-01')
 
-    document.getElementById('ewerton-idade').textContent = ewerton
-    document.getElementById('portella-idade').textContent = portella
-    document.getElementById('idade-total').textContent = ewerton;
-    document.getElementById('idade-contato').textContent = contato;
-    document.getElementById('idade-profissional-experiencia').textContent = profissionalExperiencia;
-    document.getElementById('idade-ti-experiencia').textContent = tiExperiencia;
+    params.ewerton.textContent = ewerton
+    params.portella.textContent = portella
+    params.total.textContent = ewerton;
+    params.textContent = contato;
+    params.experiencia.textContent = profissionalExperiencia;
+    params.tiExperiencia.textContent = tiExperiencia;
 
-})();
+})({
+    ewerton: document.getElementById('ewerton-idade'),
+    portella: document.getElementById('portella-idade'),
+    total: document.getElementById('idade-total'),
+    contato: document.getElementById('idade-contato'),
+    experiencia: document.getElementById('idade-profissional-experiencia'),
+    tiExperiencia: document.getElementById('idade-ti-experiencia'),
+});
