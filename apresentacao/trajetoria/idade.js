@@ -9,12 +9,14 @@
     const ewerton = calculate('1985-06-28')
     const portella = calculate('2016-06-24')
     const contato = calculate('1995-06-28')
-    const experiencia = calculate('2012-01-01')
+    const profissionalExperiencia = calculate('2001-01-01')
+    const tiExperiencia = calculate('2012-01-01')
 
-    document.getElementById('ewerton-age').textContent = ewerton
-    document.getElementById('portella-age').textContent = portella
-    document.getElementById('age-total').textContent = ewerton;
-    document.getElementById('age-contato').textContent = contato;
-    document.getElementById('age-experiencia').textContent = experiencia;
+    document.getElementById('ewerton-idade').textContent = ewerton
+    document.getElementById('portella-idade').textContent = portella
+    document.getElementById('idade-total').textContent = ewerton;
+    document.getElementById('idade-contato').textContent = contato;
+    document.getElementById('idade-profissional-experiencia').textContent = profissionalExperiencia;
+    document.getElementById('idade-ti-experiencia').textContent = tiExperiencia;
 
 })();
