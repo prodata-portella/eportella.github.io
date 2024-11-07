@@ -1,6 +1,6 @@
 # Nossa trajetória
 
-Nasci em 24/06/2016 e fui constituida por **Ewerton da Silva Portella**, antes de falar sobre mim vou elencar a trajetória dele.
+Nasci em 24/06/2016 e fui constituida por **Ewerton da Silva Portella**, antes de falar da [minha trajetória](#minha-trajetoria) vou vamos passar pela [trajetória dele](#trajetoria-do-ewerton-da-silva-portella).
 
 ## Trajetória do Ewerton da Silva Portella
 
