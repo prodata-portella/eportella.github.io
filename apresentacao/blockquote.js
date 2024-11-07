@@ -1,8 +1,12 @@
 (function blockquote() {
     const format = () => {
-        document.querySelectorAll('blockquote p').forEach(p => {
+        document.querySelectorAll('blockquote').forEach(blockquote => {
+            const p = blockquote.querySelector('p');
+            if (!p)
+                return;
             
             if (p.textContent === '[!NOTE]') {
+                p.style.bordderColor = '#1f6feb';
                 (function note() {
                     p.textContent = ''
                     p.style.display = 'flex'
@@ -29,6 +33,7 @@
                 return;
             }
             if (p.textContent === '[!TIP]') {
+                p.style.bordderColor = '#3fb950';
                 (function tip() {
                     p.textContent = ''
                     p.style.display = 'flex'
@@ -55,6 +60,7 @@
                 return
             }
             if (p.textContent === '[!IMPORTANT]') {
+                p.style.bordderColor = '#ab7df8';
                 (function important() {
                     p.textContent = ''
                     p.style.display = 'flex'
@@ -81,6 +87,7 @@
                 return
             }
             if (p.textContent === '[!WARNING]') {
+                p.style.bordderColor = '#d29922';
                 (function warning() {
                     p.textContent = ''
                     p.style.display = 'flex'
@@ -107,6 +114,7 @@
                 return
             }
             if (p.textContent === '[!CAUTION]') {
+                p.style.bordderColor = '#f85149';
                 (function caution() {
                     p.textContent = ''
                     p.style.display = 'flex'
@@ -131,8 +139,8 @@
                     p.append('Warning')
                 })()
                 return
-            }
-        })
+            }            
+        });
     };
     format();
 })()
