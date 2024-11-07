@@ -1,5 +1,22 @@
 ; (function blockquote() {
     const format = () => {
+
+        const svgElementCreate = function (params) {
+            const namespace = "http://www.w3.org/2000/svg"
+            const svg = document.createElementNS(namespace, "svg")
+            svg.setAttribute("viewBox", "0 0 16 16")
+            svg.setAttribute("version", "1.1")
+            svg.setAttribute("width", "16")
+            svg.setAttribute("height", "16")
+            svg.setAttribute("aria-hidden", "true")
+
+            const path = document.createElementNS(namespace, "path")
+            path.style.fill = params.color
+            path.setAttribute("d", params.shape)
+
+            svg.appendChild(path)
+            return svg
+        }
         document.querySelectorAll('blockquote').forEach(blockquote => {
             const p = blockquote.querySelector('p');
             if (!p)
@@ -19,21 +36,7 @@
                         p.style.columnGap = '0.4em'
                         p.style.fontWeight = '500'
                         p.style.color = highlight.color
-                        const namespace = "http://www.w3.org/2000/svg"
-
-                        const svg = document.createElementNS(namespace, "svg")
-                        svg.setAttribute("viewBox", "0 0 16 16")
-                        svg.setAttribute("version", "1.1")
-                        svg.setAttribute("width", "16")
-                        svg.setAttribute("height", "16")
-                        svg.setAttribute("aria-hidden", "true")
-
-                        const path = document.createElementNS(namespace, "path")
-                        path.style.fill = highlight.color
-                        path.setAttribute("d", highlight.shape)
-
-                        svg.appendChild(path)
-                        p.appendChild(svg)
+                        p.appendChild(svgElementCreate(highlight))
                         p.append(highlight.name)
                     })()
                 return;
@@ -52,21 +55,7 @@
                         p.style.columnGap = '0.4em'
                         p.style.fontWeight = '500'
                         p.style.color = highlight.color
-                        const namespace = "http://www.w3.org/2000/svg"
-
-                        const svg = document.createElementNS(namespace, "svg")
-                        svg.setAttribute("viewBox", "0 0 16 16")
-                        svg.setAttribute("version", "1.1")
-                        svg.setAttribute("width", "16")
-                        svg.setAttribute("height", "16")
-                        svg.setAttribute("aria-hidden", "true")
-
-                        const path = document.createElementNS(namespace, "path")
-                        path.style.fill = highlight.color
-                        path.setAttribute("d", highlight.shape)
-
-                        svg.appendChild(path)
-                        p.appendChild(svg)
+                        p.appendChild(svgElementCreate(highlight))
                         p.append(highlight.name)
                     })()
                 return
@@ -86,21 +75,7 @@
                         p.style.columnGap = '0.4em'
                         p.style.fontWeight = '500'
                         p.style.color = highlight.color
-                        const namespace = "http://www.w3.org/2000/svg"
-
-                        const svg = document.createElementNS(namespace, "svg")
-                        svg.setAttribute("viewBox", "0 0 16 16")
-                        svg.setAttribute("version", "1.1")
-                        svg.setAttribute("width", "16")
-                        svg.setAttribute("height", "16")
-                        svg.setAttribute("aria-hidden", "true")
-
-                        const path = document.createElementNS(namespace, "path")
-                        path.style.fill = highlight.color
-                        path.setAttribute("d", highlight.shape)
-
-                        svg.appendChild(path)
-                        p.appendChild(svg)
+                        p.appendChild(svgElementCreate(highlight))
                         p.append(highlight.name)
                     })()
                 return
@@ -119,21 +94,7 @@
                         p.style.columnGap = '0.4em'
                         p.style.fontWeight = '500'
                         p.style.color = highlight.color
-                        const namespace = "http://www.w3.org/2000/svg"
-
-                        const svg = document.createElementNS(namespace, "svg")
-                        svg.setAttribute("viewBox", "0 0 16 16")
-                        svg.setAttribute("version", "1.1")
-                        svg.setAttribute("width", "16")
-                        svg.setAttribute("height", "16")
-                        svg.setAttribute("aria-hidden", "true")
-
-                        const path = document.createElementNS(namespace, "path")
-                        path.style.fill = highlight.color
-                        path.setAttribute("d", highlight.shape)
-
-                        svg.appendChild(path)
-                        p.appendChild(svg)
+                        p.appendChild(svgElementCreate(highlight))
                         p.append(highlight.name)
                     })()
                 return
@@ -152,21 +113,7 @@
                         p.style.columnGap = '0.4em'
                         p.style.fontWeight = '500'
                         p.style.color = highlight.color
-                        const namespace = "http://www.w3.org/2000/svg"
-
-                        const svg = document.createElementNS(namespace, "svg")
-                        svg.setAttribute("viewBox", "0 0 16 16")
-                        svg.setAttribute("version", "1.1")
-                        svg.setAttribute("width", "16")
-                        svg.setAttribute("height", "16")
-                        svg.setAttribute("aria-hidden", "true")
-
-                        const path = document.createElementNS(namespace, "path")
-                        path.style.fill = highlight.color
-                        path.setAttribute("d", highlight.shape)
-
-                        svg.appendChild(path)
-                        p.appendChild(svg)
+                        p.appendChild(svgElementCreate(highlight))
                         p.append(highlight.name)
                     })()
                 return
