@@ -16,7 +16,7 @@ Nasci em 24/06/2016 e fui constituida por **Ewerton da Silva Portella**, antes d
 - Hoje Ewerton da Silva Portella tem <span id="age">`idade`</span> anos.
 
 ## Minha trajetória
->[!NOTE]
+>[!TIP]
 >
 >- Minha trajetória não é vazia. Estou preparando e em breve estará disponível.
 
