@@ -11,11 +11,16 @@
     const profissionalExperiencia = calculate('2001-01-01')
     const tiExperiencia = calculate('2012-01-01')
 
-    params.ewerton.textContent = ewerton
-    params.total.textContent = ewerton;
-    params.contato.textContent = contato;
-    params.experiencia.textContent = profissionalExperiencia;
-    params.tiExperiencia.textContent = tiExperiencia;
+    if (params.ewerton)
+        params.ewerton.textContent = ewerton
+    if (params.total)
+        params.total.textContent = ewerton
+    if (params.contato)
+        params.contato.textContent = contato
+    if (params.experiencia)
+        params.experiencia.textContent = profissionalExperiencia
+    if (params.tiExperiencia)
+        params.tiExperiencia.textContent = tiExperiencia
 
 })({
     ewerton: document.getElementById('ewerton-idade'),
