@@ -8,7 +8,7 @@
 - Voltando aos 25 anos completei um módulo na [Impacta Certificações e Treinamentos](https://www.impacta.com.br/)[^4]
 - Agora novamente aos 26 anos, me matriculei na graduação Ciências da computação na [Uninove](https://www.uninove.br/) onde me formei; 
 - Dos 27 até 30 anos atuei como Analista e desenvolvedor de *softwares*[^5];
-- Por fim a partir dos 30 anos passei a complementar minha atuação coesistindo *softwares* com empreendedorismo com a minha empresa [Portella LTDA](https://portella-ltda.github.io/);
+- Por fim a partir dos 30 anos passei a complementar minha atuação coesistindo *softwares* com empreendedorismo atravéz da [Portella LTDA](https://portella-ltda.github.io/);
 
 Hoje eu tenho <span id="ewerton-idade">`idade atual`</span> anos onde <span id="idade-contato">`idade contato`</span> desde o primeiro contato com computadores, <span id="idade-profissional-experiencia">`idade profissional experiência`</span> de experiência profissional sendo <span id="idade-ti-experiencia">`idade ti experiência`</span> específico em tecnologia.
 
