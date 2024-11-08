@@ -21,3 +21,4 @@ Hoje eu tenho <span id="ewerton-idade">`idade atual`</span> anos onde <span id="
 
 <script src="./idade.js"></script>
 <script src="../blockquote.js"></script>
+<script src="../highlight.js"></script>

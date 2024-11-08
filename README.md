@@ -8,3 +8,4 @@ Muito prazer!\
 [ewerton.portella@outlook.com](mailto:ewerton.portella@outlook.com)
 
 <script src="blockquote.js"></script>
+<script src="highlight.js"></script>
