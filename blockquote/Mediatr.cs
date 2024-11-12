@@ -131,10 +131,10 @@ internal sealed class BlockquoteFormatterRequestHandler : IRequestHandler<Blockq
         {
             p.SetAttributeValue("style", "display:flex; align-items:center; column-gap:0.4em; font-weight:500;");
 
-            if (highlight?.Key != default)
+            if (highlight.Key != default)
                 p.InnerHtml = p.InnerHtml.Replace(highlight.Key, string.Empty);
 
-            if (highlight?.Color != default)
+            if (highlight.Color != default)
             {
                 var span = HtmlNode.CreateNode($"<span style='color:{highlight.Color};'>{highlight.Name}</span>");
                 p.PrependChild(span);
