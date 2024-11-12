@@ -42,6 +42,11 @@ jobs:
           cd style
           dotnet build -c Release
           dotnet run
+      - name: Build idade
+        run: |
+          cd idade
+          dotnet build -c Release
+          dotnet run
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
   deploy:

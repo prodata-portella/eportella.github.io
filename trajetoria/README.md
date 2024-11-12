@@ -20,3 +20,6 @@ Hoje eu tenho <span id="ewerton-idade">`idade atual`</span> anos onde <span id="
 [^5]: Nesse periodo contribuí na [IS2B](https://is2b.com.br), [Polícia Científica](https://www.policiacientifica.sp.gov.br/) na **TODO!**, [ILATI](http://www.ilati.org.br/) e [FMU](https://fmu.br).
 
 <script src="./idade.js"></script>
+`[IDADE]:2014-01-01`
+`[IDADE]:2024-01-01`
+`[IDADE]:1985-06-28`
