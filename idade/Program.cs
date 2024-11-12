@@ -2,7 +2,7 @@
 
 var Jekyll = new DirectoryInfo(Directory.GetCurrentDirectory()).Parent!.GetDirectories("_jekyll")[0];
 
-var regex = new Regex(@"`\[IDADE\]:(\w+)`", RegexOptions.Multiline);
+var regex = new Regex(@"`\[IDADE\]:([\d]{4}\-[\d]{2}\-[\d]{2})`", RegexOptions.Multiline);
 var today = DateTime.Today;
 foreach (var file in Jekyll!.GetFiles("*.html", new EnumerationOptions() { RecurseSubdirectories = true }))
 {
@@ -15,9 +15,9 @@ foreach (var file in Jekyll!.GetFiles("*.html", new EnumerationOptions() { Recur
     var content = fileStrem.ReadToEnd();
     do
     {
-        Console.WriteLine("find:" + regex.ToString());
         var match = regex.Match(content);
 
+        Console.WriteLine("find:" + regex.ToString() +"->" + match.Success);
         if (!match.Success)
             break;
         Console.WriteLine("TODAY:" + today);
