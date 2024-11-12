@@ -2,14 +2,12 @@
 using Microsoft.Extensions.DependencyInjection;
 using MediatR;
 var services = new ServiceCollection();
-services.AddMediatR(cfg => cfg.RegisterServicesFromAssemblyContaining<Program>());
+services.AddMediatR(mediatorServiceConfiguration => mediatorServiceConfiguration.RegisterServicesFromAssemblyContaining<Program>());
 
 var provider = services.BuildServiceProvider();
-
 var mediator = provider.GetRequiredService<IMediator>();
-var Jekyll = await mediator.Send(new JekyllDirectoryInfoGetRequest());
 
-foreach (var file in Jekyll!.GetFiles("*.html", new EnumerationOptions() { RecurseSubdirectories = true }))
+await foreach (var file in mediator.CreateStream(new HtmlFileGetStreamRequest { DirectoryInfo = await mediator.Send(new JekyllDirectoryInfoGetRequest()) }))
 {
     var @new = new FileInfo(file.FullName.Replace("/_jekyll/", "/_site/"));
 
@@ -18,12 +16,10 @@ foreach (var file in Jekyll!.GetFiles("*.html", new EnumerationOptions() { Recur
 
     using var fileStrem = file.OpenRead();
     using var writer = @new.CreateText();
-    writer.Write(BlockquoteFormatter.Format(fileStrem));
+    await writer.WriteAsync(BlockquoteFormatter.Format(fileStrem));
 
     Console.WriteLine($"Portellas builder say->'{file.FullName}' success!");
 }
-
-
 
 static class BlockquoteFormatter
 {
@@ -110,8 +106,8 @@ static class BlockquoteFormatter
 
     private static void Format(HtmlNode p, Highlight highlight)
     {
-        p.SetAttributeValue("style","display:flex; align-items:center; column-gap:0.4em; font-weight:500;");
-        
+        p.SetAttributeValue("style", "display:flex; align-items:center; column-gap:0.4em; font-weight:500;");
+
         if (highlight?.Key != default)
             p.InnerHtml = p.InnerHtml.Replace(highlight.Key, string.Empty);
 
