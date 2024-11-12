@@ -7,9 +7,9 @@ _ = @base.CreateSubdirectory("_site");
 
 foreach (var file in Jekyll!.GetFiles("*.html", new EnumerationOptions() { RecurseSubdirectories = true }))
 {
-    using var fileStrem = file.OpenRead();
+    using var fileStrem = file.OpenText();
 
-    var content = fileStrem.ReadToEnd();;
+    var content = fileStrem.ReadToEnd();
     content = SvgFormatter.Format(content);
 
     var @new = new FileInfo(file.FullName.Replace("/_jekyll/", "/_site/"));
