@@ -1,5 +1,12 @@
 ﻿using HtmlAgilityPack;
+using Microsoft.Extensions.DependencyInjection;
+using MediatR;
+var services = new ServiceCollection();
+services.AddMediatR(cfg => cfg.RegisterServicesFromAssemblyContaining<Program>());
 
+var provider = services.BuildServiceProvider();
+
+var mediator = provider.GetRequiredService<IMediator>();
 var Jekyll = new DirectoryInfo(Directory.GetCurrentDirectory()).Parent!.GetDirectories("_jekyll")[0];
 
 foreach (var file in Jekyll!.GetFiles("*.css", new EnumerationOptions() { RecurseSubdirectories = true }))
