@@ -34,12 +34,13 @@ jobs:
           dotnet run
       - name: Build highlight
         run: |
-          cd ../highlight
+          ls
+          cd highlight
           dotnet build -c Release
           dotnet run
       - name: Build style
         run: |
-          cd ../style
+          cd style
           dotnet build -c Release
           dotnet run
       - name: Upload artifact
