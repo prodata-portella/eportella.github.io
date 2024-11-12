@@ -39,9 +39,9 @@ internal sealed class BlockquoteFormatterRequestHandler : IRequestHandler<Blockq
 {
     public async Task<string?> Handle(BlockquoteFormatterRequest request, CancellationToken cancellationToken)
     {
-        using var fileStrem = request.FileInfo!.OpenRead();
+        using var stream = request.FileInfo!.OpenRead();
         await Task.Yield();
-        return BlockquoteFormatter.Format(fileStrem);
+        return BlockquoteFormatter.Format(stream);
     }
 
     static class BlockquoteFormatter
@@ -142,7 +142,7 @@ internal sealed class BlockquoteFormatterRequestHandler : IRequestHandler<Blockq
             }
         }
 
-        public class Highlight
+        public struct Highlight
         {
             public string? Key { get; set; }
             public string? Color { get; set; }
