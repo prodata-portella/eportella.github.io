@@ -15,6 +15,7 @@ foreach (var file in Jekyll!.GetFiles("*.html", new EnumerationOptions() { Recur
     var content = fileStrem.ReadToEnd();
     do
     {
+        Console.WriteLine("find:" + regex.ToString());
         var match = regex.Match(content);
 
         if (!match.Success)
