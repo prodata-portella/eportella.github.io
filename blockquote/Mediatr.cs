@@ -41,14 +41,7 @@ internal sealed class BlockquoteFormatterRequestHandler : IRequestHandler<Blockq
     {
         using var stream = request.FileInfo!.OpenRead();
         await Task.Yield();
-        return BlockquoteFormatter.Format(stream);
-    }
-
-    static class BlockquoteFormatter
-    {
-        public static string? Format(FileStream stream)
-        {
-            var htmlDocument = new HtmlDocument();
+        var htmlDocument = new HtmlDocument();
             htmlDocument.Load(stream);
 
             var blockquotes = htmlDocument.DocumentNode.SelectNodes("//blockquote");
@@ -125,9 +118,9 @@ internal sealed class BlockquoteFormatterRequestHandler : IRequestHandler<Blockq
             }
 
             return htmlDocument.DocumentNode.OuterHtml;
-        }
+    }
 
-        private static void Format(HtmlNode p, Highlight highlight)
+    private static void Format(HtmlNode p, Highlight highlight)
         {
             p.SetAttributeValue("style", "display:flex; align-items:center; column-gap:0.4em; font-weight:500;");
 
@@ -148,5 +141,4 @@ internal sealed class BlockquoteFormatterRequestHandler : IRequestHandler<Blockq
             public string? Color { get; set; }
             public string? Name { get; set; }
         }
-    }
 }
