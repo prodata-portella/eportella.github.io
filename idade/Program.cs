@@ -3,7 +3,7 @@ using System.Text.RegularExpressions;
 
 var Jekyll = new DirectoryInfo(Directory.GetCurrentDirectory()).Parent!.GetDirectories("_jekyll")[0];
 
-var regex = new Regex(@"`\[IDADE\]:([\d]{4}\-[\d]{2}\-[\d]{2})`", RegexOptions.Multiline);
+var regex = new Regex(@"<code.*>\[IDADE\]:([\d]{4}\-[\d]{2}\-[\d]{2})\<\/code>", RegexOptions.Multiline);
 var today = DateTime.Today;
 foreach (var file in Jekyll!.GetFiles("*.html", new EnumerationOptions() { RecurseSubdirectories = true }))
 {
