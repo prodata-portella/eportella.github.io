@@ -29,7 +29,7 @@ jobs:
           destination: ./_jekyll
       - name: Build blockquote
         run: |
-          cd blockuote
+          cd blockquote
           dotnet build -c Release
           dotnet run
       - name: Build highlight
