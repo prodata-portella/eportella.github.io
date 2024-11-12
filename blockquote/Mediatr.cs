@@ -2,7 +2,6 @@ using System.Runtime.CompilerServices;
 using HtmlAgilityPack;
 using MediatR;
 
-
 internal sealed class JekyllDirectoryInfoGetRequest : IRequest<DirectoryInfo>
 {
 
