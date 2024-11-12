@@ -32,8 +32,8 @@ foreach (var file in Jekyll!.GetFiles("*.html", new EnumerationOptions() { Recur
 
     } while (true);
 
-    using var writer = @new.OpenWrite();
-    fileStrem.BaseStream.CopyTo(writer);
+    using var writer = @new.CreateText();
+    writer.Write(content);
 
     Console.WriteLine($"move -> '{@new.FullName}' success!");
 }
