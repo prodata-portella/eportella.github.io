@@ -10,7 +10,7 @@
 - Dos 27 até 30 anos atuei como Analista e desenvolvedor de *softwares*[^5];
 - Por fim a partir dos 30 anos passei a complementar minha carreira coesistindo *softwares* com empreendedorismo atravéz da [Portella LTDA](https://portella-ltda.github.io/);
 
-Hoje eu tenho <span id="ewerton-idade">`idade atual`</span> anos onde <span id="idade-contato">`idade contato`</span> desde o primeiro contato com computadores, <span id="idade-profissional-experiencia">`idade profissional experiência`</span> de experiência profissional sendo <span id="idade-ti-experiencia">`idade ti experiência`</span> específico em tecnologia.
+Hoje eu tenho `[IDADE]:1985-06-28` anos onde `[IDADE]:1995-06-28` desde o primeiro contato com computadores, `[IDADE]:2001-01-01` de experiência profissional sendo `[IDADE]:2012-01-01` específico em tecnologia.
 
 
 [^1]: Meu primeiro contato com "programação" e não sabia muito o que fazer com aquilo.\
@@ -18,8 +18,3 @@ Hoje eu tenho <span id="ewerton-idade">`idade atual`</span> anos onde <span id="
 [^3]: Nessa fase passei por diversos cursos e treinamentos voltados a empreendedorismo e gestão de pessoas. Também foi meados a essa fase que meu interesse por programação começou a surgir quando senti necessidade de eliminar procedimentos repetitivos como gerente e posteriomente gerente sócio em duas franquias na rede *Gendai*.
 [^4]: O conteúdo do módulo foi, Introdução a Lógica de Programação. Introdução a Programação Orientada a Objetos. *MsSql Server 2008* Módulo I, *Java Programmer* Módulo I e II.
 [^5]: Nesse periodo contribuí na [IS2B](https://is2b.com.br), [Polícia Científica](https://www.policiacientifica.sp.gov.br/) na **TODO!**, [ILATI](http://www.ilati.org.br/) e [FMU](https://fmu.br).
-
-<script src="./idade.js"></script>
-`[IDADE]:2014-01-01`
-`[IDADE]:2024-01-01`
-`[IDADE]:1985-06-28`
