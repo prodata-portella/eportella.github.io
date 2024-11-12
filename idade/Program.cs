@@ -28,7 +28,7 @@ foreach (var file in Jekyll!.GetFiles("*.html", new EnumerationOptions() { Recur
 
         Console.WriteLine("AGE:" + age);
 
-        regex.Replace(match.Groups[0].Value, age.ToString());
+        content = content.Replace(match.Groups[0].Value, age.ToString());
 
     } while (true);
 
