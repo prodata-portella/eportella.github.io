@@ -6,6 +6,3 @@
 Muito prazer!\
 **Ewerton da Silva Portella**\
 [ewerton.portella@outlook.com](mailto:ewerton.portella@outlook.com)
-
-<script src="blockquote.js"></script>
-<script src="highlight.js"></script>
