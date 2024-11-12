@@ -1,4 +1,5 @@
-﻿using System.Text.RegularExpressions;
+﻿using System.Globalization;
+using System.Text.RegularExpressions;
 
 var Jekyll = new DirectoryInfo(Directory.GetCurrentDirectory()).Parent!.GetDirectories("_jekyll")[0];
 
@@ -17,17 +18,41 @@ foreach (var file in Jekyll!.GetFiles("*.html", new EnumerationOptions() { Recur
     {
         var match = regex.Match(content);
 
-        Console.WriteLine("find:" + regex.ToString() +"->" + match.Success);
+        Console.WriteLine("find:" + regex.ToString() + "->" + match.Success);
         if (!match.Success)
             break;
         Console.WriteLine("TODAY:" + today);
-        Console.WriteLine("MATCH:" + match.Result(match.Groups["1"].Value));
+        Console.WriteLine("MATCH:" + match.Groups[1].Value);
 
+        var age = AgeCalculator.Calculate(DateTime.ParseExact(match.Groups[1].Value, "yyyy-mm-dd", CultureInfo.InvariantCulture));
+
+        Console.WriteLine("AGE:" + age);
+
+        regex.Replace(match.Groups[0].Value, age.ToString());
 
     } while (true);
-    
+
     using var writer = @new.OpenWrite();
     fileStrem.BaseStream.CopyTo(writer);
 
     Console.WriteLine($"move -> '{@new.FullName}' success!");
+}
+
+class AgeCalculator
+{
+    internal static int Calculate(DateTime birthDate)
+    {
+        DateTime today = DateTime.Today;
+
+        // Calcula a idade em anos diretamente
+        int age = today.Year - birthDate.Year;
+
+        // Ajusta a idade se o aniversário ainda não aconteceu este ano
+        if (birthDate.Date > today.AddYears(-age).Date)
+        {
+            age--;
+        }
+
+        return age;
+    }
 }
