@@ -20,7 +20,7 @@ foreach (var file in Jekyll!.GetFiles("*.html", new EnumerationOptions() { Recur
     using var writer = @new.CreateText();
     writer.Write(content);
 
-    Console.WriteLine($"Portellas builder say->'{file.FullName}' success!");
+    Console.WriteLine($"Build -> '{@new.FullName}' success!");
 }
 
 static class SvgFormatter

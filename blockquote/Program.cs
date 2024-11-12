@@ -18,7 +18,7 @@ foreach (var file in Jekyll!.GetFiles("*.css", new EnumerationOptions() { Recurs
     using var writer = @new.OpenWrite();
     fileStrem.BaseStream.CopyTo(writer);
 
-    Console.WriteLine($"Portellas builder say->'{file.FullName}' success!");
+    Console.WriteLine($"Build -> '{@new.FullName}' success!");
 }
 
 
