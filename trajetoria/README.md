@@ -13,7 +13,7 @@
 Hoje eu tenho <span id="ewerton-idade">`idade atual`</span> anos onde <span id="idade-contato">`idade contato`</span> desde o primeiro contato com computadores, <span id="idade-profissional-experiencia">`idade profissional experiência`</span> de experiência profissional sendo <span id="idade-ti-experiencia">`idade ti experiência`</span> específico em tecnologia.
 
 
-[^1]: Mau primeiro contato com "programação" e não sabia muito o que fazer com aquilo.\
+[^1]: Meu primeiro contato com "programação" e não sabia muito o que fazer com aquilo.\
 [^2]: Segundo contato com programação, eu estava com outros focos na vida.\
 [^3]: Nessa fase passei por diversos cursos e treinamentos voltados a empreendedorismo e gestão de pessoas. Também foi meados a essa fase que meu interesse por programação começou a surgir quando senti necessidade de eliminar procedimentos repetitivos como gerente e posteriomente gerente sócio em duas franquias na rede *Gendai*.
 [^4]: O conteúdo do módulo foi, Introdução a Lógica de Programação. Introdução a Programação Orientada a Objetos. *MsSql Server 2008* Módulo I, *Java Programmer* Módulo I e II.
