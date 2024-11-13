@@ -311,10 +311,10 @@ internal sealed class CssMoveRequestHandler : IRequestHandler<CssMoveRequest>
 {
     public async Task Handle(CssMoveRequest request, CancellationToken cancellationToken)
     {
-        if (!request.FileInfoTarget!.Directory.Exists)
+        if (!request.FileInfoTarget!.Directory!.Exists)
             request.FileInfoTarget.Directory.Create();
         using var writer = request.FileInfoTarget.OpenWrite();
-        using var fileStrem = request.FileInfoSource.OpenText();
+        using var fileStrem = request.FileInfoSource!.OpenText();
         await fileStrem.BaseStream.CopyToAsync(writer, cancellationToken);
     }
 }
@@ -328,7 +328,7 @@ internal sealed class BuildRequestHandler(IMediator mediator) : IRequestHandler<
 {
     public async Task Handle(BuildRequest request, CancellationToken cancellationToken)
     {
-        if (!request.FileInfoTarget!.Directory.Exists)
+        if (!request.FileInfoTarget!.Directory!.Exists)
             request.FileInfoTarget.Directory.Create();
         var content = await mediator.Send(new BlockquoteFormatRequest { FileInfo = request.FileInfoSource }, cancellationToken);
         content = await mediator.Send(new SvgFormatRequest { Content = content }, cancellationToken);
