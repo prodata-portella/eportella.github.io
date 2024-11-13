@@ -21,7 +21,7 @@ internal sealed class LoggingPipelineBehavior<TRequest, TResponse> : IPipelineBe
         
         var response = await next();
         Stopwatch.Stop();
-        Console.WriteLine($"{typeof(TRequest).FullName} Time Elapsed {Stopwatch.ElapsedMilliseconds} in milliseconds");
+        Console.WriteLine($"{typeof(TRequest).FullName} Time Elapsed {Stopwatch.ElapsedMilliseconds}ms");
         return response;
     }
 }
@@ -45,7 +45,7 @@ internal sealed class StreamLoggingPipelineBehavior<TRequest, TResponse> : IStre
         await foreach (var item in next())
             yield return item;
         Stopwatch.Stop();
-        Console.WriteLine($"{typeof(TRequest).FullName} Time Elapsed {Stopwatch.ElapsedMilliseconds} in milliseconds");
+        Console.WriteLine($"{typeof(TRequest).FullName} Time Elapsed {Stopwatch.ElapsedMilliseconds}ms");
     }
 }
 
