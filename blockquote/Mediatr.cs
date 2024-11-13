@@ -220,7 +220,7 @@ internal sealed class IdadeBuildRequestHandler : IRequestHandler<IdadeBuildReque
     Regex Regex { get; }
     public IdadeBuildRequestHandler()
     {
-        Regex = new Regex(@"<code.*>\[IDADE\]:([\d]{4}\-[\d]{2}\-[\d]{2})\<\/code>", RegexOptions.Multiline);
+        Regex = new Regex(@"<code.*?>\[IDADE\]:([\d]{4}\-[\d]{2}\-[\d]{2})\<\/code>", RegexOptions.Multiline);
     }
     public async Task<string?> Handle(IdadeBuildRequest request, CancellationToken cancellationToken)
     {
