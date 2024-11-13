@@ -330,7 +330,7 @@ internal sealed class BuildRequestHandler(IMediator mediator) : IRequestHandler<
     {
         if (!request.FileInfoTarget.Directory!.Exists)
             request.FileInfoTarget.Directory.Create();
-        var content = await mediator.Send(new BlockquoteFormatRequest { FileInfo = request.FileInfo }, cancellationToken);
+        var content = await mediator.Send(new BlockquoteFormatRequest { FileInfo = request.FileInfoSource }, cancellationToken);
         content = await mediator.Send(new SvgFormatRequest { Content = content }, cancellationToken);
         content = await mediator.Send(new IdadeBuildRequest { Content = content }, cancellationToken);
         using var writer = request.FileInfoTarget.CreateText();
