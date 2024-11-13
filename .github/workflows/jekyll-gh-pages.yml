@@ -32,21 +32,21 @@ jobs:
           cd blockquote
           dotnet build -c Release
           dotnet run
-      - name: Build highlight
-        run: |
-          cd highlight
-          dotnet build -c Release
-          dotnet run
+      #- name: Build highlight
+      #  run: |
+      #    cd highlight
+      #    dotnet build -c Release
+      #    dotnet run
       - name: Build style
         run: |
           cd style
           dotnet build -c Release
           dotnet run
-      - name: Build idade
-        run: |
-          cd idade
-          dotnet build -c Release
-          dotnet run
+      #- name: Build idade
+      #  run: |
+      #    cd idade
+      #    dotnet build -c Release
+      #    dotnet run
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
   deploy:
