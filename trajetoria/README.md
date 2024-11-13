@@ -13,8 +13,8 @@
 Hoje eu tenho `[IDADE]:1985-06-28` anos onde `[IDADE]:1995-06-28` desde o primeiro contato com computadores, `[IDADE]:2001-01-01` de experiência profissional sendo `[IDADE]:2012-01-01` específico em tecnologia.
 
 
-[^1]: Meu primeiro contato com "programação" e não sabia muito o que fazer com aquilo.\
-[^2]: Segundo contato com programação, eu estava com outros focos na vida.\
+[^1]: Meu primeiro contato com "programação" e não sabia muito o que fazer com aquilo.
+[^2]: Segundo contato com programação, eu estava com outros focos na vida.
 [^3]: Nessa fase passei por diversos cursos e treinamentos voltados a empreendedorismo e gestão de pessoas. Também foi meados a essa fase que meu interesse por programação começou a surgir quando senti necessidade de eliminar procedimentos repetitivos como gerente e posteriomente gerente sócio em duas franquias na rede *Gendai*.
 [^4]: O conteúdo do módulo foi, Introdução a Lógica de Programação. Introdução a Programação Orientada a Objetos. *MsSql Server 2008* Módulo I, *Java Programmer* Módulo I e II.
 [^5]: Nesse periodo contribuí na [IS2B](https://is2b.com.br), [Polícia Científica](https://www.policiacientifica.sp.gov.br/) na **TODO!**, [ILATI](http://www.ilati.org.br/) e [FMU](https://fmu.br).
