@@ -374,7 +374,7 @@ internal sealed class LogRequestHandler(IMediator mediator) : IRequestHandler<Lo
 {
     public async Task Handle(LogRequest request, CancellationToken cancellationToken)
     {
-        Console.WriteLine($"'{request.FileInfo.FullName}'");
+        Console.WriteLine($"LOG->'{request.FileInfo.FullName}'");
         using var reader = request.FileInfo.OpenText();
         Console.WriteLine(await reader.ReadToEndAsync());
         Console.WriteLine(string.Empty);
