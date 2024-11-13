@@ -18,6 +18,21 @@ internal sealed class JekyllDirectoryInfoGetRequestHandler : IRequestHandler<Jek
     }
 }
 
+internal sealed class CssFileGetStreamRequest : IStreamRequest<FileInfo>
+{
+    public DirectoryInfo? DirectoryInfo { get; init; }
+}
+internal sealed class CssFileGetStreamHandler : IStreamRequestHandler<CssFileGetStreamRequest, FileInfo>
+{
+    public async IAsyncEnumerable<FileInfo> Handle(CssFileGetStreamRequest request, [EnumeratorCancellation] CancellationToken cancellationToken)
+    {
+        foreach (var item in request.DirectoryInfo!.EnumerateFiles("*.css", new EnumerationOptions() { RecurseSubdirectories = true }))
+            yield return item;
+
+        await Task.Yield();
+    }
+}
+
 internal sealed class HtmlFileGetStreamRequest : IStreamRequest<FileInfo>
 {
     public DirectoryInfo? DirectoryInfo { get; init; }
@@ -243,6 +258,24 @@ internal sealed class IdadeBuildRequestHandler : IRequestHandler<IdadeBuildReque
     }
 }
 
+internal sealed class CssMoveRequest : IRequest
+{
+    public FileInfo? FileInfo { get; init; }
+}
+internal sealed class CssMoveRequestHandler : IRequestHandler<CssMoveRequest>
+{
+    public async Task Handle(CssMoveRequest request, CancellationToken cancellationToken)
+    {
+        var site = new FileInfo(request.FileInfo!.FullName.Replace("/_jekyll/", "/_site/"));
+
+        if (!site.Directory!.Exists)
+            site.Directory.Create();
+        using var writer = site.OpenWrite();
+        using var fileStrem = request.FileInfo.OpenText();
+        await fileStrem.BaseStream.CopyToAsync(writer, cancellationToken);
+    }
+}
+
 internal sealed class BuildRequest : IRequest
 {
     public FileInfo? FileInfo { get; init; }
@@ -255,11 +288,9 @@ internal sealed class BuildRequestHandler(IMediator mediator) : IRequestHandler<
 
         if (!site.Directory!.Exists)
             site.Directory.Create();
-
         var content = await mediator.Send(new BlockquoteFormatRequest { FileInfo = request.FileInfo }, cancellationToken);
         content = await mediator.Send(new SvgFormatRequest { Content = content }, cancellationToken);
         content = await mediator.Send(new IdadeBuildRequest { Content = content }, cancellationToken);
-
         using var writer = site.CreateText();
         await writer.WriteAsync(content);
     }
