@@ -1,9 +1,53 @@
+using System.Diagnostics;
 using System.Globalization;
 using System.Runtime.CompilerServices;
 using System.Text.RegularExpressions;
 using System.Xml.Linq;
 using HtmlAgilityPack;
 using MediatR;
+
+internal sealed class LoggingPipelineBehavior<TRequest, TResponse> : IPipelineBehavior<TRequest, TResponse>
+        where TRequest : IRequest<TResponse>
+{
+    Stopwatch Stopwatch { get; }
+    public LoggingPipelineBehavior(
+    )
+    {
+        Stopwatch = new Stopwatch();
+    }
+    public async Task<TResponse> Handle(TRequest request, RequestHandlerDelegate<TResponse> next, CancellationToken cancellationToken)
+    {
+        Stopwatch.Start();
+        
+        var response = await next();
+        Stopwatch.Stop();
+        Console.WriteLine($"{typeof(TRequest).FullName} Time Elapsed {Stopwatch.ElapsedMilliseconds} in milliseconds");
+        return response;
+    }
+}
+
+internal sealed class StreamLoggingPipelineBehavior<TRequest, TResponse> : IStreamPipelineBehavior<TRequest, TResponse>
+        where TRequest : IStreamRequest<TResponse>
+{
+    Stopwatch Stopwatch { get; }
+    public StreamLoggingPipelineBehavior(
+    )
+    {
+        Stopwatch = new Stopwatch();
+    }
+    public async IAsyncEnumerable<TResponse> Handle(
+        TRequest request,
+        StreamHandlerDelegate<TResponse> next,
+        [EnumeratorCancellation] CancellationToken cancellationToken
+    )
+    {
+        Stopwatch.Start();
+        await foreach (var item in next())
+            yield return item;
+        Stopwatch.Stop();
+        Console.WriteLine($"{typeof(TRequest).FullName} Time Elapsed {Stopwatch.ElapsedMilliseconds} in milliseconds");
+    }
+}
 
 internal sealed class JekyllDirectoryInfoGetRequest : IRequest<DirectoryInfo>
 {
