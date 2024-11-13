@@ -219,6 +219,7 @@ internal sealed class IdadeBuildRequestHandler : IRequestHandler<IdadeBuildReque
             var match = Regex.Match(content);
             if (!match.Success)
                 break;
+            Console.WriteLine($"GROPU->'{match.Groups[0].Value}'");
             content = content.Replace(
                 match.Groups[0].Value,
                 Calculate(DateTime.ParseExact(match.Groups[1].Value, "yyyy-mm-dd", CultureInfo.InvariantCulture)).ToString()
