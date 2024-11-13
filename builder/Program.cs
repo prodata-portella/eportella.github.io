@@ -10,7 +10,15 @@ var provider = services.BuildServiceProvider();
 var mediator = provider.GetRequiredService<IMediator>();
 var jekyll = await mediator.Send(new JekyllDirectoryInfoGetRequest());
 await foreach (var fileInfo in mediator.CreateStream(new CssFileGetStreamRequest { DirectoryInfo = jekyll }))
-    await mediator.Send(new CssMoveRequest { FileInfo = fileInfo });
+    await mediator.Send(new CssMoveRequest 
+    { 
+        FileInfoSource = fileInfo,
+        FileInfoTarget = new FileInfo(fileInfo!.FullName.Replace("/_jekyll/", "/_site/"))
+    });
 
 await foreach (var fileInfo in mediator.CreateStream(new HtmlFileGetStreamRequest { DirectoryInfo = jekyll }))
-    await mediator.Send(new BuildRequest { FileInfo = fileInfo });
+    await mediator.Send(new BuildRequest 
+    { 
+        FileInfoSource = fileInfo,
+        FileInfoTarget = new FileInfo(fileInfo!.FullName.Replace("/_jekyll/", "/_site/"))
+    });

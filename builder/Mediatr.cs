@@ -304,38 +304,36 @@ internal sealed class IdadeBuildRequestHandler : IRequestHandler<IdadeBuildReque
 
 internal sealed class CssMoveRequest : IRequest
 {
-    public FileInfo? FileInfo { get; init; }
+    public FileInfo? FileInfoSource { get; init; }
+    public FileInfo? FileInfoTarget { get; init; }
 }
 internal sealed class CssMoveRequestHandler : IRequestHandler<CssMoveRequest>
 {
     public async Task Handle(CssMoveRequest request, CancellationToken cancellationToken)
     {
-        var site = new FileInfo(request.FileInfo!.FullName.Replace("/_jekyll/", "/_site/"));
-
-        if (!site.Directory!.Exists)
-            site.Directory.Create();
-        using var writer = site.OpenWrite();
-        using var fileStrem = request.FileInfo.OpenText();
+        if (!request.FileInfoTarget.Directory!.Exists)
+            request.FileInfoTarget.Directory.Create();
+        using var writer = request.FileInfoTarget.OpenWrite();
+        using var fileStrem = request.FileInfoSource.OpenText();
         await fileStrem.BaseStream.CopyToAsync(writer, cancellationToken);
     }
 }
 
 internal sealed class BuildRequest : IRequest
 {
-    public FileInfo? FileInfo { get; init; }
+    public FileInfo? FileInfoSource { get; init; }
+    public FileInfo? FileInfoTarget { get; init; }
 }
 internal sealed class BuildRequestHandler(IMediator mediator) : IRequestHandler<BuildRequest>
 {
     public async Task Handle(BuildRequest request, CancellationToken cancellationToken)
     {
-        var site = new FileInfo(request.FileInfo!.FullName.Replace("/_jekyll/", "/_site/"));
-
-        if (!site.Directory!.Exists)
-            site.Directory.Create();
+        if (!request.FileInfoTarget.Directory!.Exists)
+            request.FileInfoTarget.Directory.Create();
         var content = await mediator.Send(new BlockquoteFormatRequest { FileInfo = request.FileInfo }, cancellationToken);
         content = await mediator.Send(new SvgFormatRequest { Content = content }, cancellationToken);
         content = await mediator.Send(new IdadeBuildRequest { Content = content }, cancellationToken);
-        using var writer = site.CreateText();
+        using var writer = request.FileInfoTarget.CreateText();
         await writer.WriteAsync(content);
     }
 }
