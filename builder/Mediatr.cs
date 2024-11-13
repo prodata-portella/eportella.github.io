@@ -49,16 +49,29 @@ internal sealed class StreamLoggingPipelineBehavior<TRequest, TResponse> : IStre
     }
 }
 
+internal sealed class RootDirectoryInfoGetRequest : IRequest<DirectoryInfo>
+{
+
+}
+internal sealed class RootDirectoryInfoGetRequestHandler : IRequestHandler<RootDirectoryInfoGetRequest, DirectoryInfo>
+{
+    public async Task<DirectoryInfo> Handle(RootDirectoryInfoGetRequest request, CancellationToken cancellationToken)
+    {
+        await Task.Yield();
+        return new DirectoryInfo(Directory.GetCurrentDirectory()).Parent;
+    }
+}
+
 internal sealed class JekyllDirectoryInfoGetRequest : IRequest<DirectoryInfo>
 {
 
 }
-internal sealed class JekyllDirectoryInfoGetRequestHandler : IRequestHandler<JekyllDirectoryInfoGetRequest, DirectoryInfo>
+internal sealed class JekyllDirectoryInfoGetRequestHandler(IMediator mediator) : IRequestHandler<JekyllDirectoryInfoGetRequest, DirectoryInfo>
 {
+    
     public async Task<DirectoryInfo> Handle(JekyllDirectoryInfoGetRequest request, CancellationToken cancellationToken)
     {
-        await Task.Yield();
-        return new DirectoryInfo(Directory.GetCurrentDirectory()).Parent!.GetDirectories("_jekyll")[0];
+        return (await mediator.Send(new RootDirectoryInfoGetRequest(), cancellationToken))!.GetDirectories("_jekyll")[0];
     }
 }
 
@@ -86,6 +99,21 @@ internal sealed class HtmlFileGetStreamHandler : IStreamRequestHandler<HtmlFileG
     public async IAsyncEnumerable<FileInfo> Handle(HtmlFileGetStreamRequest request, [EnumeratorCancellation] CancellationToken cancellationToken)
     {
         foreach (var item in request.DirectoryInfo!.EnumerateFiles("*.html", new EnumerationOptions() { RecurseSubdirectories = true }))
+            yield return item;
+
+        await Task.Yield();
+    }
+}
+
+internal sealed class MarkdownFileInfoGetStreamRequest : IStreamRequest<FileInfo>
+{
+    public DirectoryInfo? DirectoryInfo { get; init; }
+}
+internal sealed class MarkdownFileInfoGetStreamHandler : IStreamRequestHandler<MarkdownFileInfoGetStreamRequest, FileInfo>
+{
+    public async IAsyncEnumerable<FileInfo> Handle(MarkdownFileInfoGetStreamRequest request, [EnumeratorCancellation] CancellationToken cancellationToken)
+    {
+        foreach (var item in request.DirectoryInfo!.EnumerateFiles("*.md", new EnumerationOptions() { RecurseSubdirectories = true }))
             yield return item;
 
         await Task.Yield();
@@ -335,5 +363,20 @@ internal sealed class BuildRequestHandler(IMediator mediator) : IRequestHandler<
         content = await mediator.Send(new IdadeBuildRequest { Content = content }, cancellationToken);
         using var writer = request.FileInfoTarget.CreateText();
         await writer.WriteAsync(content);
+    }
+}
+
+internal sealed class LogRequest : IRequest
+{
+    public FileInfo? FileInfo { get; init; }
+}
+internal sealed class LogRequestHandler(IMediator mediator) : IRequestHandler<LogRequest>
+{
+    public async Task Handle(LogRequest request, CancellationToken cancellationToken)
+    {
+        Console.WriteLine($"'{request.FileInfo.FullName}'");
+        using var reader = request.FileInfo.OpenText();
+        Console.WriteLine(await reader.ReadToEndAsync());
+        Console.WriteLine(string.Empty);
     }
 }

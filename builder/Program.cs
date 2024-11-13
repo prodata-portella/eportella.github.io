@@ -22,3 +22,10 @@ await foreach (var htmlFileInfo in mediator.CreateStream(new HtmlFileGetStreamRe
         FileInfoSource = htmlFileInfo,
         FileInfoTarget = new FileInfo(htmlFileInfo!.FullName.Replace("/_jekyll/", "/_site/"))
     });
+
+var rootDirectoryInfo = await mediator.Send(new RootDirectoryInfoGetRequest());
+await foreach (var markdownFileInfo in mediator.CreateStream(new MarkdownFileInfoGetStreamRequest { DirectoryInfo = rootDirectoryInfo }))
+    await mediator.Send(new LogRequest 
+    { 
+        FileInfo = markdownFileInfo,
+    });
