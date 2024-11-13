@@ -374,9 +374,24 @@ internal sealed class LogRequestHandler(IMediator mediator) : IRequestHandler<Lo
 {
     public async Task Handle(LogRequest request, CancellationToken cancellationToken)
     {
+        Console.WriteLine();
         Console.WriteLine($"LOG->'{request.FileInfo.FullName}'");
         using var reader = request.FileInfo.OpenText();
-        Console.WriteLine(await reader.ReadToEndAsync());
-        Console.WriteLine(string.Empty);
+        var content = await reader.ReadToEndAsync();
+        Console.WriteLine(content);
+        Console.WriteLine();
+        var regex = new Regex("^# (.+)$");
+        var match = regex.Match(content);
+
+        do
+        {
+            if(!match.Sucess)
+                break;
+
+            content = content.Replace(match.Groups[0].value, $"<h1>{match.Groups[1].Value}</h1>")
+        } while(true);
+
+        Console.WriteLine(content);
+        Console.WriteLine();
     }
 }
