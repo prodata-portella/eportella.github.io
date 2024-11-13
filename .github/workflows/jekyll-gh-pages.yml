@@ -27,7 +27,7 @@ jobs:
         with:
           source: ./
           destination: ./_jekyll
-      - name: Build blockquote
+      - name: Build with Portella
         run: |
           cd blockquote
           dotnet build -c Release
