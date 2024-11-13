@@ -1,4 +1,5 @@
 using System.Runtime.CompilerServices;
+using System.Xml.Linq;
 using HtmlAgilityPack;
 using MediatR;
 
