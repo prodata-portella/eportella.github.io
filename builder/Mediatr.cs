@@ -212,6 +212,7 @@ internal sealed class SvgFormatRequestHandler : IRequestHandler<SvgFormatRequest
 {
     public async Task<string?> Handle(SvgFormatRequest request, CancellationToken cancellationToken)
     {
+        await Task.yield();
         if (request.Content == default)
             return default;
 
